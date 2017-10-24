@@ -10,7 +10,7 @@ export default getUserDemo = ->
         b.id
       ]
     , []    
-
+  
   .then (data) ->
      data
       

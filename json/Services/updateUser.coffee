@@ -1,5 +1,6 @@
 import axios from 'axios'
 import source from '../config/config.default'
+import dd from 'ddeyes'
 
 export default updateUser = (id, data) ->
   axios
@@ -12,5 +13,5 @@ export default updateUser = (id, data) ->
   .then (response) ->
     response.data if response.status is 200
 
-  .catch (error) ->
-    console.log error
+  .catch (e) ->
+    dd e

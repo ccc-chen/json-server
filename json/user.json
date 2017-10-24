@@ -1,3 +1,24 @@
 {
-  "users": []
+  "users": [
+    {
+      "name": "王六",
+      "loacation": "湖南",
+      "id": 1
+    },
+    {
+      "name": "王六",
+      "loacation": "湖南",
+      "id": 2
+    },
+    {
+      "name": "王五",
+      "location": "武汉",
+      "id": 3
+    },
+    {
+      "name": "李二",
+      "location": "深圳",
+      "id": 4
+    }
+  ]
 }

@@ -3,18 +3,26 @@ import getUser from '../Services/getUser'
 import dd from 'ddeyes'
 
 export default createUserDemo = ->
-  data =
-    name: '赵四'
-    location: '北京'
 
-  for i in [1..4]
-    createUser data
+  for i in [
+      name: '赵四'
+      location: '北京'
+    ,
+      name: '张三'
+      location: '上海'
+    ,
+      name: '王五'
+      location: '武汉'
+    ,
+      name: '李二'
+      location: '深圳'
+  ]
+    createUser i
   # [1..4].map
 
-    getUser()
+  getUser()
   
-    .then (data) ->
-      console.log data
-
-    .catch (error) ->
-      console.log error  
+  .then (data) ->
+    dd data
+  .catch (e) ->
+    dd e

@@ -6,7 +6,6 @@ export default deleteUserDemo = ->
   getUser()
 
   .then (userIds) ->
-
     # for id in userIds
     #   deleteUser id
     #   .then ( isDone ) ->
@@ -14,15 +13,7 @@ export default deleteUserDemo = ->
     #   .catch (e) ->
     #     dd e
 
-    userIds.map (id) ->
-
-      deleteUser id
-      .then (isDone ) ->
-        dd isDone
-      .catch (e) ->
-        dd e
-
-    # `
+        # `
     #   function hello () {
     #     console.log('Hello World!!!');
     #   }
@@ -30,8 +21,10 @@ export default deleteUserDemo = ->
 
     #   # dd({userIds});
     # `
-    
-    true
+
+    userIds.map (id) ->
+
+      deleteUser id
     
   .then ( isAllDeleted ) ->
     if isAllDeleted

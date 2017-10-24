@@ -1,5 +1,6 @@
 import axios from 'axios'
 import source from '../config/config.default'
+import dd from 'ddeyes'
 
 export default createUser = (data) ->
   axios
@@ -12,5 +13,5 @@ export default createUser = (data) ->
   .then (response) ->
     response.data if response.stauts is 200
 
-  .catch (error) ->
-    console.log error      
+  .catch (e) ->
+    dd e

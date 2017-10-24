@@ -18,6 +18,8 @@ export default updateUserDemo = ->
       .catch (e) ->
         dd e
 
+  getUser()      
+
   .then (data) ->
   , data
 
